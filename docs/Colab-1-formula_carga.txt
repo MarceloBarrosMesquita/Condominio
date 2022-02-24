@@ -1,0 +1,16 @@
+=CONCATENAR("insert into nao_perturbe (numero, bloqueado, datacadastro) values('";A1:A1;"','";SE(C1:C1 = "bloqueado";1;0);"','";TEXTO(B1;"aaaa-mm-dd");"');")
+
+
+
+select datacadastro, count(*) from nao_perturbe where datacadastro between '2013-07-01' and sysdate() group by datacadastro order by 1
+
+select date_format(datacadastro,'%Y%m'), count(*) from nao_perturbe where datacadastro between '2011-07-01' and '2011-08-01' group by date_format(datacadastro,'%Y%m') order by 1 desc 
+
+
+select count(*)
+  from nao_perturbe
+
+select date_format(datacadastro,'%Y-%m'), count(*) from nao_perturbe where datacadastro between '2012-01-01' and sysdate() group by date_format(datacadastro,'%Y-%m') order by 1 desc
+
+
+delete from nao_perturbe where datacadastro > '2016-08-01 00:00:00'

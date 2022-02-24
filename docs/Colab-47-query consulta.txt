@@ -1,0 +1,6 @@
+select s.pk, s.ds_nome, t.dt_base, t.n_qtde_transacoes, t.n_vl_transacoes, t.n_qtde_unidades_vendidas, (t.n_vl_transacoes / t.n_qtde_transacoes) ticket_medio
+  from transacoes t
+       inner join sites s on t.sites_pk = s.pk
+where t.dt_base between '2019-11-01' and '2019-11-30'
+   and (t.n_vl_transacoes / t.n_qtde_transacoes) > 5000
+order by 2

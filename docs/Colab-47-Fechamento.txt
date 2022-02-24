@@ -1,0 +1,8 @@
+1º Resumo Mês
+2º Dashboard Template
+3º Atendimento - Resumo por Sites - Período
+4º Grupos Motivos Oportunidades Perdidas - Site
+5º Oportunidades Perdidas por Funcionário
+6º Relatório Melhor Dia / Contagem
+7º Visão - Média Atendimentos por Funcionário / Dia - Tempo
+8º Produtos por Atendimento
